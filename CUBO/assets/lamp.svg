@@ -1,0 +1,114 @@
+<svg version="1.1" id="lamp" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 150 200" style="enable-background:new 0 0 150 200;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#haste_1_);}
+	.st1{fill:url(#topframe_x5F_mask_1_);}
+	.st2{fill:url(#topbottom_x5F_mask_1_);}
+	.st3{fill:url(#top_1_);}
+	.st4{fill:url(#bottomback_1_);}
+	.st5{fill:url(#bottom_1_);}
+	.st6{fill:none;stroke:#EA0000;stroke-miterlimit:10;}
+	.st7{fill:url(#back_1_);}
+	.st8{fill:#050505;}
+	.st9{fill:url(#base_1_);}
+	.st10{fill:#FFC19F;}
+	.st11{fill:url(#front_1_);}
+	.st12{opacity:0.67;fill:#FFFFFF;}
+	.st13{fill:url(#baseframe_2_);}
+</style>
+<g>
+	<linearGradient id="haste_1_" gradientUnits="userSpaceOnUse" x1="76.5729" y1="165.6302" x2="86.0733" y2="165.7716">
+		<stop  offset="0" style="stop-color:#69442E"/>
+		<stop  offset="0.2333" style="stop-color:#E0BBA9"/>
+		<stop  offset="0.2339" style="stop-color:#DAB5A3"/>
+		<stop  offset="1" style="stop-color:#69442E"/>
+	</linearGradient>
+	<rect id="haste" x="75.7" y="131.7" class="st0" width="10.9" height="68.1"/>
+	<rect id="haste_x5F_mask" class="mask" x="75.7" y="131.7" width="10.9" height="68.1"/>
+</g>
+<g>
+	<linearGradient id="topframe_x5F_mask_1_" gradientUnits="userSpaceOnUse" x1="12.2615" y1="28.6549" x2="138.7385" y2="28.6549">
+		<stop  offset="0" style="stop-color:#E3CCB3"/>
+		<stop  offset="0.555" style="stop-color:#E0BBA9"/>
+		<stop  offset="0.5679" style="stop-color:#6E472F"/>
+		<stop  offset="1" style="stop-color:#2E1913"/>
+	</linearGradient>
+	<polygon id="topframe_x5F_mask" class="st1" points="12.3,34.4 83.7,19.8 138.7,35.3 138.4,37.5 84,22.3 12.8,36 	"/>
+	<polygon id="topframe_1_" class="mask" points="12.3,34.4 83.7,19.8 138.7,35.3 138.4,37.5 84,22.3 12.8,36 	"/>
+</g>
+<g>
+	<linearGradient id="topbottom_x5F_mask_1_" gradientUnits="userSpaceOnUse" x1="12.883" y1="35.9576" x2="138.4277" y2="35.9576">
+		<stop  offset="0" style="stop-color:#A18D7E"/>
+		<stop  offset="1" style="stop-color:#69442E"/>
+	</linearGradient>
+	<polygon id="topbottom_x5F_mask" class="st2" points="12.9,36 84,50.3 138.4,37.5 83.7,21.7 	"/>
+	<polygon id="topbottom_1_" class="mask" points="12.9,36 84,50.3 138.4,37.5 83.7,21.7 	"/>
+</g>
+<g>
+	<linearGradient id="top_1_" gradientUnits="userSpaceOnUse" x1="12.2615" y1="18.6681" x2="138.7385" y2="18.6681">
+		<stop  offset="0" style="stop-color:#7D491F"/>
+		<stop  offset="0.5389" style="stop-color:#D6AF9B"/>
+		<stop  offset="0.6191" style="stop-color:#A77959"/>
+		<stop  offset="1" style="stop-color:#69442E"/>
+	</linearGradient>
+	<path id="top" class="st3" d="M12.3,34.4c19-3.7,37-30.5,63.1-32.3s42,27.3,63.4,33.3l-55-15.2L12.3,34.4z"/>
+	<path id="top_x5F_mask" class="mask" d="M12.3,34.4c19-3.7,37-30.5,63.1-32.3s42,27.3,63.4,33.3l-55-15.2L12.3,34.4z"/>
+</g>
+<linearGradient id="bottomback_1_" gradientUnits="userSpaceOnUse" x1="47.5931" y1="122.7357" x2="109.2928" y2="122.7357">
+	<stop  offset="0" style="stop-color:#A18D7E"/>
+	<stop  offset="0.555" style="stop-color:#E0BBA9"/>
+	<stop  offset="0.5679" style="stop-color:#6E472F"/>
+	<stop  offset="1" style="stop-color:#69442E"/>
+</linearGradient>
+<polygon id="bottomback" class="st4" points="47.6,126.6 76.3,115.8 109.3,122.7 108.9,126.7 76.3,120.5 48.2,129.7 "/>
+<polygon id="bottomback_x5F_mask" class="mask" points="47.6,126.6 76.3,115.8 109.3,122.7 108.9,126.7 76.3,120.5 48.2,129.7 "/>
+<g>
+	<linearGradient id="bottom_1_" gradientUnits="userSpaceOnUse" x1="51.328" y1="128.5624" x2="107.9833" y2="128.5624">
+		<stop  offset="0" style="stop-color:#A18D7E"/>
+		<stop  offset="1" style="stop-color:#69442E"/>
+	</linearGradient>
+	<polygon id="bottom" class="st5" points="51.3,128.6 83.3,136.5 108,126.5 76.4,120.6 	"/>
+	<polygon id="bottom_x5F_mask" class="mask" points="51.3,128.6 83.3,136.5 108,126.5 76.4,120.6 	"/>
+</g>
+<path class="st6" d="M34.2,131.8"/>
+<g>
+	<linearGradient id="back_1_" gradientUnits="userSpaceOnUse" x1="68.7066" y1="82.2506" x2="80.6274" y2="82.2506">
+		<stop  offset="0" style="stop-color:#A18D7E"/>
+		<stop  offset="1" style="stop-color:#69442E"/>
+	</linearGradient>
+	<polygon id="back" class="st7" points="68.7,47.2 80.6,49.6 80.6,116.7 72.6,117.3 	"/>
+	<polygon id="back_x5F_mask" class="st8 mask" points="68.7,47.2 80.6,49.6 80.6,116.7 72.6,117.3 	"/>
+</g>
+<g>
+	<linearGradient id="base_1_" gradientUnits="userSpaceOnUse" x1="47.3051" y1="145.0368" x2="108.5532" y2="113.0378">
+		<stop  offset="0" style="stop-color:#A18D7E"/>
+		<stop  offset="1" style="stop-color:#69442E"/>
+	</linearGradient>
+	<polygon id="base" class="st9" points="34.2,131.5 44.8,127.9 45.4,130.9 83,140.5 111.2,128.4 111.9,125.5 119.9,127.5 
+		83.9,145.8 	"/>
+	<polygon id="base_x5F_mask" class="mask" points="34.2,131.5 44.8,127.9 45.4,130.9 83,140.5 111.2,128.4 111.9,125.5 119.9,127.5 83.9,145.8 	
+		"/>
+</g>
+<ellipse id="lamp" class="st10" cx="80.9" cy="110.1" rx="13.1" ry="18.5"/>
+<ellipse id="lamp_x5F_mask" class="st8 mask" cx="80.9" cy="110.1" rx="13.1" ry="18.5"/>
+<linearGradient id="front_1_" gradientUnits="userSpaceOnUse" x1="34.2477" y1="83.0909" x2="119.1698" y2="84.3552">
+	<stop  offset="0" style="stop-color:#A18D7E"/>
+	<stop  offset="0.555" style="stop-color:#E0BBA9"/>
+	<stop  offset="0.5662" style="stop-color:#6E472F"/>
+	<stop  offset="1" style="stop-color:#69442E"/>
+</linearGradient>
+<path id="front" class="st11" d="M82.5,26.9L22.2,37.5L45.5,131l37.6,9.6l28.3-12.1l17.1-91.1L82.5,26.9z M47.8,127.8L28.6,39.2
+	l46.6-7.8l5.3,104.1L47.8,127.8z M108.8,126.2l-23,8.7l4-103.5l32.3,7.8L108.8,126.2z"/>
+<polygon id="glass1" class="st12" points="47.8,127.8 28.6,39.2 75.2,31.5 80.5,135.6 "/>
+<polygon id="glass2" class="st12" points="108.8,126.2 85.8,134.9 89.8,31.5 122.1,39.2 "/>
+<path id="front_x5F_mask" class="mask" d="M82.5,26.9L22.2,37.5L45.5,131l37.6,9.6l28.3-12.1l17.1-91.1L82.5,26.9z M47.8,127.8L28.6,39.2
+	l46.6-7.8l5.3,104.1L47.8,127.8z M108.8,126.2l-23,8.7l4-103.5l32.3,7.8L108.8,126.2z"/>
+<linearGradient id="baseframe_2_" gradientUnits="userSpaceOnUse" x1="50.8986" y1="137.2374" x2="110.2023" y2="137.2374">
+	<stop  offset="0" style="stop-color:#E3CCB3"/>
+	<stop  offset="0.555" style="stop-color:#E0BBA9"/>
+	<stop  offset="0.5679" style="stop-color:#6E472F"/>
+	<stop  offset="1" style="stop-color:#2E1913"/>
+</linearGradient>
+<polygon id="baseframe" class="st13" points="34.3,132.8 84,147 120.1,128.4 120.1,127.5 84,145 34.3,131.5 "/>
+<polygon id="baseframe_1_" class="mask" points="34.3,132.8 84,147 120.1,128.4 120.1,127.5 84,145 34.3,131.5 "/>
+</svg>

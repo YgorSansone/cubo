@@ -1,0 +1,20 @@
+body {
+    background-color: #FFF;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Calibri, SANS-SERIF;
+}
+
+.page {
+    height: 100%;
+    background-color: #FFF;
+    transition: all 0.8s;
+    .menu-open & {
+        filter: blur(10px);
+    }
+    .content {
+        height: calc(100vh - #{$menu-height});
+        overflow: auto;
+    }
+}

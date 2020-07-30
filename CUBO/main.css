@@ -1,0 +1,357 @@
+body {
+  background-color: #FFF;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Calibri, SANS-SERIF;
+}
+
+.page {
+  height: 100%;
+  background-color: #FFF;
+  transition: all 0.8s;
+}
+
+.menu-open .page {
+  filter: blur(10px);
+}
+
+.page .content {
+  height: calc(100vh - 40px);
+  overflow: auto;
+}
+
+.header {
+  background-color: #000;
+  box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.3);
+  height: 40px;
+  color: #FFF;
+}
+
+.header .title {
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.header .menu-button {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.header .menu-button svg * {
+  fill: #FFF;
+}
+
+.menu-content {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  transition: all 0.8s;
+  opacity: 0;
+}
+
+.menu-open .menu-content {
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0;
+  opacity: 1;
+}
+
+.menu-content .menu-inner {
+  text-align: center;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.menu-content .menu-inner div {
+  padding: 20px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.menu-content .menu-inner div:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.intro {
+  height: calc( 50vh - 40px);
+  width: 100%;
+  background: url(assets/intro.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.intro .overlay {
+  background: linear-gradient(rgba(0, 255, 60, 0.588), rgba(255, 255, 255, 0));
+  height: 100%;
+  filter: hue-rotate(0);
+  animation-name: coloring;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: relative;
+}
+
+@keyframes coloring {
+  0% {
+    filter: hue-rotate(0);
+  }
+  50% {
+    filter: hue-rotate(360deg);
+  }
+  100% {
+    filter: hue-rotate(0);
+  }
+}
+
+.portifolio-area .title {
+  font-size: 2em;
+  margin: 25px auto;
+  text-align: center;
+  color: #777;
+}
+
+.cube-container {
+  text-align: center;
+  perspective: 460px;
+  perspective-origin: center;
+  margin-top: 60px;
+}
+
+.cube {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.cube.face1 {
+  transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.cube.face2 {
+  transform: rotateY(-90deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.cube.face3 {
+  transform: rotateY(-90deg) rotateX(-90deg) rotateZ(90deg);
+}
+
+.cube.face4 {
+  transform: rotateY(0deg) rotateX(90deg) rotateZ(0deg);
+}
+
+.cube.face5 {
+  transform: rotateY(90deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.cube.face6 {
+  transform: rotateY(180deg) rotateX(0deg) rotateZ(0deg);
+}
+
+.cube div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  border: 2px solid #000;
+  font-size: 7em;
+  color: #FFF;
+  text-shadow: 2px 2px 0px #000, -2px -2px 0px #000, 2px -2px 0px #000, -2px 2px 0px #000;
+  line-height: 200px;
+  border-radius: 10px;
+  animation-name: coloring;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.cube div:nth-child(1) {
+  background-color: rgba(0, 15, 255, 0.5);
+  transform: rotateY(0deg) translateZ(100px);
+}
+
+.cube div:nth-child(2) {
+  background-color: rgba(43, 244, 77, 0.5);
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.cube div:nth-child(3) {
+  background-color: rgba(255, 0, 198, 0.5);
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.cube div:nth-child(4) {
+  background-color: rgba(255, 238, 0, 0.5);
+  transform: rotateX(270deg) translateZ(100px);
+}
+
+.cube div:nth-child(5) {
+  background-color: rgba(255, 143, 0, 0.5);
+  transform: rotateY(270deg) translateZ(100px);
+}
+
+.cube div:nth-child(6) {
+  background-color: rgba(244, 43, 43, 0.5);
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.cube-buttons {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.cube-buttons .cube-btn {
+  background-color: #000000;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.3em;
+  padding: 10px 50px;
+  color: #fff;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.cube-buttons .cube-btn:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login, .login .box {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.login-animation .sky .sky-elements .sun, .login-animation .sky .sky-elements .moon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.login .box {
+  border: 1px solid #DDD;
+  padding: 30px;
+  border-radius: 13px;
+  box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.122);
+  background-color: #fbfbfb;
+}
+
+.login .box input {
+  width: 100%;
+  margin: 20px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 1px solid #DDD;
+  font-size: 1.4em;
+  color: #717171;
+}
+
+.login-animation {
+  position: relative;
+}
+
+.login-animation .sky {
+  height: 200px;
+  background: linear-gradient(rgba(255, 254, 136, 0.588), rgba(120, 193, 245, 0.26), rgba(0, 0, 0, 0.588), rgba(23, 14, 152, 0.26));
+  border-radius: 50% 50% 0 0;
+  position: relative;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+  background-size: 300%;
+  background-position: 0 0%;
+}
+
+.night .login-animation .sky {
+  background-position: 0 100%;
+}
+
+.login-animation .sky .sky-elements {
+  width: 200%;
+  position: relative;
+  left: -160%;
+  top: 20px;
+  transition: all 1s ease-in-out;
+}
+
+.night .login-animation .sky .sky-elements {
+  transform: rotateZ(180deg);
+}
+
+.login-animation .sky .sky-elements .sun {
+  background-color: #ffc160;
+  box-shadow: 0px 0px 40px #ffce00;
+  float: right;
+}
+
+.login-animation .sky .sky-elements .moon {
+  background-color: #e2e2e2;
+  box-shadow: 0px 0px 40px #ffffff;
+}
+
+.login-animation #lamp {
+  position: absolute;
+  bottom: 0;
+  width: 140px;
+  right: 0;
+}
+
+.login-animation #lamp .mask {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.night .login-animation #lamp .mask {
+  opacity: 0.5;
+  fill: #1c1f50;
+}
+
+.night.on .login-animation #lamp .mask {
+  opacity: 0.5;
+  fill: #805c20;
+}
+
+.login-animation .bulb {
+  height: 59px;
+  width: 43px;
+  background-color: #ffcf1678;
+  border-radius: 50%;
+  position: absolute;
+  right: 43px;
+  z-index: 1;
+  top: 86px;
+  box-shadow: 0px 0px 56px 19px #ffab00d1;
+  animation-name: glowing;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  display: none;
+}
+
+.on.night .login-animation .bulb {
+  display: block;
+}
+
+@keyframes glowing {
+  0% {
+    box-shadow: 0px 0px 56px 19px #ffab00d1;
+  }
+  50% {
+    box-shadow: 0px 0px 70px 50px #ffab00d1;
+  }
+  100% {
+    box-shadow: 0px 0px 56px 19px #ffab00d1;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,29 @@
+.intro {
+    height: calc( 50vh - #{$menu-height});
+    width: 100%;
+    background: url(assets/intro.png);
+    background-size: cover;
+    background-attachment: fixed;
+    .overlay {
+        background: linear-gradient(rgba(0, 255, 60, 0.588), rgba(255, 255, 255, 0));
+        height: 100%;
+        filter: hue-rotate(0);
+        animation-name: coloring;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: relative;
+    }
+    
+}
+
+@keyframes coloring {
+    0% {
+        filter: hue-rotate(0);
+    }
+    50% {
+        filter: hue-rotate(360deg);
+    }
+    100% {
+        filter: hue-rotate(0);
+    }
+}

@@ -1,0 +1,23 @@
+.header {
+
+    background-color: #000;
+    box-shadow: 0px 3px 13px 0px rgba(0, 0, 0, 0.3);
+    height: $menu-height;
+    color: #FFF;
+    .title {
+        vertical-align: middle;
+        line-height:  $menu-height;
+    }
+    .menu-button {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 10px;
+        svg {
+            * {
+                fill: #FFF;
+            }
+        }
+    }
+}

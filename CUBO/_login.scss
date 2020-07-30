@@ -1,0 +1,121 @@
+%login-size {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+%sphere {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+$transition-default: all 1s ease-in-out;
+
+.login {
+    @extend %login-size;
+    .box {
+        @extend %login-size;
+        border: 1px solid #DDD;
+        padding: 30px;
+        border-radius: 13px;
+        box-shadow: 0px 10px 5px -5px rgba(0, 0, 0, 0.122);
+        background-color: #fbfbfb;
+        input {
+            width: 100%;
+            margin: 20px 0;
+            padding: 10px;
+            box-sizing: border-box;
+            border-radius: 6px;
+            border: 1px solid #DDD;
+            font-size: 1.4em;
+            color: #717171;
+        }
+    }
+}
+
+.login-animation {
+    position: relative;
+    .sky {
+        height: 200px;
+        background: linear-gradient(rgba(255, 254, 136, 0.588), rgba(120, 193, 245, 0.26), rgba(0, 0, 0, 0.588), rgba(23, 14, 152, 0.26));
+        border-radius: 50% 50% 0 0;
+        position: relative;
+        overflow: hidden;
+        transition: $transition-default;
+        background-size: 300%;
+        background-position: 0 0%;
+        .night & {
+            background-position: 0 100%;
+        }
+        .sky-elements {
+            width: 200%;
+            position: relative;
+            left: -160%;
+            top: 20px;
+            transition: $transition-default;
+            .night & {
+                transform: rotateZ(180deg);
+            }
+            .sun {
+                @extend %sphere;
+                background-color: #ffc160;
+                box-shadow: 0px 0px 40px #ffce00;
+                float: right;
+            }
+            .moon {
+                @extend %sphere;
+                background-color: #e2e2e2;
+                box-shadow: 0px 0px 40px #ffffff;
+            }
+        }
+    }
+    #lamp {
+        position: absolute;
+        bottom: 0;
+        width: 140px;
+        right: 0;
+        .mask {
+            opacity: 0;
+            transition: $transition-default;
+            .night & {
+                opacity: 0.5;
+                fill: #1c1f50;
+            }
+            .night.on & {
+                opacity: 0.5;
+                fill: #805c20;
+            }
+        }
+    }
+    .bulb {
+        height: 59px;
+        width: 43px;
+        background-color: #ffcf1678;
+        border-radius: 50%;
+        position: absolute;
+        right: 43px;
+        z-index: 1;
+        top: 86px;
+        box-shadow: 0px 0px 56px 19px #ffab00d1;
+        animation-name: glowing;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        display: none;
+        .on.night & {
+            display: block;
+        }
+    }
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0px 0px 56px 19px #ffab00d1;
+    }
+    50% {
+        box-shadow: 0px 0px 70px 50px #ffab00d1;
+    }
+    100% {
+        box-shadow: 0px 0px 56px 19px #ffab00d1;
+    }
+}
